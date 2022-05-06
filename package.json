@@ -4,6 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
+  "homepage": "https://andresmillsgallego.github.io/todo-app-1/",
   "dependencies": {
     "@blueprintjs/core": "^4.2.1",
     "@testing-library/react": "^13.2.0",
