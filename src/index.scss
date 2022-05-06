@@ -1,0 +1,175 @@
+@import "~normalize.css";
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+
+* {
+  border-radius: 5px;
+}
+
+body {
+  height: 110vh;
+  background-image: linear-gradient(to bottom right, steelBlue, mediumSeaGreen);
+  margin: 30px auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1rem;
+  border: 3px solid black;
+  margin: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 3px 3px 5px;
+}
+
+#item-counter {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+form {
+  width: 50%;
+  height: 60vh;
+  border: 3px solid darkmagenta;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin: 0 2rem;
+  background-color:cornsilk;
+  box-shadow: 3px 3px 5px;
+  }
+
+form label {
+  margin-bottom: 1rem
+}
+
+form input {
+  margin-left: 1rem;
+}
+
+.bp4-card {
+  width: 75%;
+  margin-bottom: 1rem;
+  background-color:lightcyan;
+  box-shadow: 3px 3px 5px;
+  border: 3px solid darkmagenta;
+}
+
+#main {
+  display: flex;
+  margin-left: 10%;
+}
+
+#cards {
+  width: 75%;
+  height: 60vh;
+  max-height: fit-content;
+  overflow: auto;
+}
+
+.buttons {
+  width: 25%;
+  margin: auto;
+  margin-right: 1rem;
+  
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1vw;
+  font-family: cursive;
+  border: 3px solid black;
+  margin: 2rem;
+  margin-top: 8%;
+  padding: 1rem;
+}
+
+a {
+  margin-right: 1rem;
+}
+
+#me:hover, a:hover {
+  cursor: pointer;
+  color:fuchsia;
+}
+
+.showPath {
+  font-size: 1.5vw;
+  word-spacing: 1vw;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#settings-form {
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+}
+
+#settings-form h2 {
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: 2px double darkmagenta;
+  padding-bottom: .5rem;
+}
+
+#settings-form input {
+  margin: auto;
+  margin-bottom: 1rem;
+  margin-top: .5rem;
+}
+
+#navBar {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: inherit;
+  border: 2px solid rgba(0, 0, 0, 0.73);
+  box-shadow: 1px 1px 2px;
+}
+
+#nav-heading {
+  margin-left: 1rem;
+}
+
+.links {
+  font-weight: bold;
+}
+
+#palm {
+  width: 75%;
+  height: 60vh;
+  border: 3px solid darkmagenta;
+}
+
+.mini-palm {
+  width: 20%;
+  margin: auto;
+  float: right;
+  overflow: hidden;
+}
+
+#current-settings {
+  width: 50%;
+  border: 2px solid darkmagenta;
+  padding: .5rem;
+  margin-top: 6rem;
+  background-color: azure;
+}
+
+#current-settings h3 {
+  margin-bottom: 2rem;
+  padding-bottom: .5rem;
+  border-bottom: 2px double darkmagenta;
+}
