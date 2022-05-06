@@ -13,11 +13,11 @@ function Header({ incomplete }) {
 
         <Navbar id='navBar' className='bp4-dark bp4-align-center'>
           <NavbarGroup align='center'>
-            <Link to='/' className='links'>Home</Link>
+            <Link to='/todo-app-1' className='links'>Home</Link>
               <NavbarDivider/>
                 <NavbarHeading id='nav-heading'>Links</NavbarHeading>
               <NavbarDivider/>
-            <Link to='/settings' className='links' onClick={() => toggleHeader(false)}>Settings</Link>
+            <Link to='/todo-app-1/settings' className='links' onClick={() => toggleHeader(false)}>Settings</Link>
           </NavbarGroup>
         </Navbar>
 
