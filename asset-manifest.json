@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.40947c11.chunk.css",
-    "main.js": "/static/js/main.52b67d13.chunk.js",
-    "main.js.map": "/static/js/main.52b67d13.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.70e2a95a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.70e2a95a.js.map",
-    "static/css/2.32ff2b20.chunk.css": "/static/css/2.32ff2b20.chunk.css",
-    "static/js/2.d756683c.chunk.js": "/static/js/2.d756683c.chunk.js",
-    "static/js/2.d756683c.chunk.js.map": "/static/js/2.d756683c.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.32ff2b20.chunk.css.map": "/static/css/2.32ff2b20.chunk.css.map",
-    "static/css/main.40947c11.chunk.css.map": "/static/css/main.40947c11.chunk.css.map",
-    "static/js/2.d756683c.chunk.js.LICENSE.txt": "/static/js/2.d756683c.chunk.js.LICENSE.txt",
-    "static/media/index.scss": "/static/media/blueprint-icons-20.7c675118.eot",
-    "static/media/palm.e1314561.jpg": "/static/media/palm.e1314561.jpg"
+    "main.css": "/todo-app-1/static/css/main.40947c11.chunk.css",
+    "main.js": "/todo-app-1/static/js/main.52b67d13.chunk.js",
+    "main.js.map": "/todo-app-1/static/js/main.52b67d13.chunk.js.map",
+    "runtime-main.js": "/todo-app-1/static/js/runtime-main.007644d6.js",
+    "runtime-main.js.map": "/todo-app-1/static/js/runtime-main.007644d6.js.map",
+    "static/css/2.e391dd64.chunk.css": "/todo-app-1/static/css/2.e391dd64.chunk.css",
+    "static/js/2.4ae7cd2f.chunk.js": "/todo-app-1/static/js/2.4ae7cd2f.chunk.js",
+    "static/js/2.4ae7cd2f.chunk.js.map": "/todo-app-1/static/js/2.4ae7cd2f.chunk.js.map",
+    "index.html": "/todo-app-1/index.html",
+    "static/css/2.e391dd64.chunk.css.map": "/todo-app-1/static/css/2.e391dd64.chunk.css.map",
+    "static/css/main.40947c11.chunk.css.map": "/todo-app-1/static/css/main.40947c11.chunk.css.map",
+    "static/js/2.4ae7cd2f.chunk.js.LICENSE.txt": "/todo-app-1/static/js/2.4ae7cd2f.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/todo-app-1/static/media/blueprint-icons-20.7c675118.eot",
+    "static/media/palm.e1314561.jpg": "/todo-app-1/static/media/palm.e1314561.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.70e2a95a.js",
-    "static/css/2.32ff2b20.chunk.css",
-    "static/js/2.d756683c.chunk.js",
+    "static/js/runtime-main.007644d6.js",
+    "static/css/2.e391dd64.chunk.css",
+    "static/js/2.4ae7cd2f.chunk.js",
     "static/css/main.40947c11.chunk.css",
     "static/js/main.52b67d13.chunk.js"
   ]
