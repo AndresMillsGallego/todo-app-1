@@ -11,8 +11,8 @@ export default class App extends React.Component {
       <>
         <BrowserRouter>
           <Routes>
-            <Route path='/settings' element={<Settings />} />
-            <Route path='/' element={<ToDo />} />
+            <Route path='/todo-app-1/settings' element={<Settings />} />
+            <Route path='/todo-app-1' element={<ToDo />} />
           </Routes>
         </BrowserRouter>
       </>
