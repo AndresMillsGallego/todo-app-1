@@ -2,17 +2,21 @@ import React, { useContext, useEffect, useState } from 'react';
 import useForm from '../../hooks/form.js';
 
 import { SettingsContext } from '../../context/settings.js';
+import { AuthContext } from '../../context/auth.js';
 import { v4 as uuid } from 'uuid';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { When } from 'react-if'
+
 
 import Header from '../header/header'
 import Form from '../form/form'
 import List from '../list/list'
 import Footer from '../footer/Footer'
+import Login from '../auth/Login'
 
 const ToDo = () => {
 
   const settings = useContext(SettingsContext);
+  const auth = useContext(AuthContext);
 
   const defaultValues = {
     difficulty: 4,
@@ -56,21 +60,24 @@ const ToDo = () => {
 
   return (
     <>
-      <Header incomplete={incomplete} />
-      <div id='main'>
-        <Form
-          handleChange={handleChange}
-          handleSubmit={handleSubmit}
-          defaultValues={defaultValues}
-        />
+      <Login />
+      <When condition={auth.isLoggedIn}>
+        <Header incomplete={incomplete} />
+        <div id='main'>
+          <Form
+            handleChange={handleChange}
+            handleSubmit={handleSubmit}
+            defaultValues={defaultValues}
+          />
 
-        <List
-          list={list}
-          toggleComplete={toggleComplete}
-        />
-      </div>
-    <Footer />
-    </>
+          <List
+            list={list}
+            toggleComplete={toggleComplete}
+          />
+        </div>
+        <Footer /> 
+        </When>
+      </>
   );
 };
 

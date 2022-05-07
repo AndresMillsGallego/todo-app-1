@@ -4,8 +4,10 @@ import jwt_decode from 'jwt-decode';
 
 export const AuthContext = React.createContext();
 
+const jwt = require('jsonwebtoken')
+
 const testUser = {
-  Administrator: {
+  Andres: {
     password: 'password',
     name: 'Andres',
     token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVXNlciIsInJvbGUiOiJ1c2VyIiwiY2FwYWJpbGl0aWVzIjoiWydyZWFkJ10iLCJpYXQiOjE1MTYyMzkwMjJ9.WXYvIKLdPz_Mm0XDYSOJo298ftuBqqjTzbRvCpxa9Go'
@@ -22,7 +24,7 @@ const AuthProvider = ({ children }) => {
   }
 
   const login = async (username, password) => {
-    let creds = user[username];
+    let creds = testUser[username];
 
     if (creds && creds.password === password) {
       try {
@@ -54,6 +56,9 @@ const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     let token = cookie.load('auth')
+    if (token) {
+      setIsLoggedIn(true);
+    }
   }, []);
 
   const values = {

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Navbar, NavbarDivider, NavbarGroup, NavbarHeading } from '@blueprintjs/core'
-// import Login from '../auth/Login'
 
 function Header({ incomplete }) {
 

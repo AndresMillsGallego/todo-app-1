@@ -7,7 +7,7 @@ import { Button } from '@blueprintjs/core'
 const Form = ({ handleChange, handleSubmit, defaultValues }) => {
   
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} id='list-form'>
 
         <h2>Add To Do Item</h2>
 

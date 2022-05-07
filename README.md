@@ -205,3 +205,23 @@ Here is an example of my code using `localStorage`
 I also set up the settings page to always render the current user settings so that the user can check them to see what they are _before_ changing them.  This also serves as excellent proof of life that my code is working as intended.  
 
 ![settings](./settings.png)
+
+## Lab 33
+
+For this lab we implemented `auth` and `login` functionality!
+
+For now we are hard coding the values, but after a successful lab we should be able to:
+
+- Nothing should be visible unless the user is logged in.
+- Once logged in, the appropriate elements should render and be visible to the user
+- After logging in, the token should be saved as a cookie.  If the cookie/token exists, then the user stays logged in
+- After logging in, a `logout` button should render that when clicked, logs the user out and removes the token from the stored cookies
+- We should have passing tests written for this new funcionality
+
+When the page loads _if_ the user is **not** logged in:
+
+![login](./login.png)
+
+_After_ the user loggs in and/or if there is a valid token stored in cookies:
+
+![loggedIn](./logged-in.png)
