@@ -20,7 +20,7 @@ function Header({ incomplete }) {
             <Link to='/todo-app-1/settings' className='links' onClick={() => toggleHeader(false)}>Settings</Link>
           </NavbarGroup>
         </Navbar>
-
+        {/* <Login /> */}
       </header>
       <header id='item-counter'>
         <h1>To Do List: {incomplete} items pending</h1>

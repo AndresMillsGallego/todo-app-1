@@ -27,7 +27,8 @@ header {
   margin-bottom: 2rem;
 }
 
-form {
+#settings-form,
+#list-form {
   width: 50%;
   height: 60vh;
   border: 3px solid darkmagenta;
@@ -172,4 +173,26 @@ a {
   margin-bottom: 2rem;
   padding-bottom: .5rem;
   border-bottom: 2px double darkmagenta;
+}
+
+#login-form {
+  width: 30%;
+  margin: auto;
+  margin-top: 10vh;
+  border: 3px solid black;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#login-h1 {
+  width: 50%;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+  border: 3px solid black;
+}
+
+.logout {
+  margin-left: 90%;
 }

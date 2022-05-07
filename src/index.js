@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SettingsProvider from './context/settings'
+import AuthProvider from './context/auth';
 
 import App from './app.js';
 import './index.scss'
@@ -9,7 +10,9 @@ class Main extends React.Component {
   render() {
     return (
       <SettingsProvider>
-        <App />
+        <AuthProvider>
+          <App />
+        </AuthProvider>
       </SettingsProvider>
     );
   }
