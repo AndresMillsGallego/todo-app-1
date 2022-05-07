@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Navbar, NavbarDivider, NavbarGroup, NavbarHeading } from '@blueprintjs/core'
+// import Login from '../auth/Login'
 
 function Header({ incomplete }) {
 
@@ -20,7 +21,7 @@ function Header({ incomplete }) {
             <Link to='/todo-app-1/settings' className='links' onClick={() => toggleHeader(false)}>Settings</Link>
           </NavbarGroup>
         </Navbar>
-
+        {/* <Login /> */}
       </header>
       <header id='item-counter'>
         <h1>To Do List: {incomplete} items pending</h1>
