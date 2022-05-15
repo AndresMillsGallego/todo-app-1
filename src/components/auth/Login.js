@@ -25,6 +25,7 @@ const Login = () => {
     <div id="login">
       <When condition={isLoggedIn}>
         <Button onClick={logout} className='bp4-intent-danger logout'>Logout</Button>
+        <h3 id='welcome'>Welcome {username}!</h3>
       </When>
 
       <When condition={!isLoggedIn}>
