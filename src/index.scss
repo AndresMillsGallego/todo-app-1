@@ -176,7 +176,8 @@ a {
 }
 
 #login-form {
-  width: 30%;
+  width: 40%;
+  min-width: fit-content;
   margin: auto;
   margin-top: 10vh;
   border: 3px solid black;
@@ -186,7 +187,7 @@ a {
 }
 
 #login-h1 {
-  width: 50%;
+  width: 75%;
   margin: auto;
   padding: 1rem;
   text-align: center;
@@ -200,4 +201,21 @@ a {
 #welcome {
   text-align: center;
   font-size: 1.5rem;
+}
+
+#signup-form {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#signup-form legend {
+  font-size: 1.5rem;
+}
+
+#show-signup {
+  width: 25%;
+  margin-top: 4rem;
+  margin-left: 37.5%;
 }

@@ -225,3 +225,23 @@ When the page loads _if_ the user is **not** logged in:
 _After_ the user loggs in and/or if there is a valid token stored in cookies:
 
 ![loggedIn](./logged-in.png)
+
+## Lab 34
+
+Goals for this lab are to take what we have done so far and use live API calls both for the todo items themselves and the user data as well.
+
+- GET /todo: Gets a list of all items
+- ‘POST /todo’: Adds an item
+- ‘PUT /todo’: Updates an item (you’ll use this to mark them as complete)
+- ‘DELETE /todo/:id’ : Deletes an item
+
+Axios is used in our app to make all of these requests
+
+- Registration (/signup)
+- Login (/signin)
+
+Axios is used for these as well.  When a user creates an account all data is sent via axios, as well as when a user wants to log in. 
+
+After refactoring this lab, all tests still pass and all prior functionality is still working.  
+
+I used the `useEffect` hook to retrieve any items (if they exist) from the database with an axios `get` request and they are rendered to the page.  

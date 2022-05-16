@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import cookie from 'react-cookies';
 import jwt_decode from 'jwt-decode';
+import axios from 'axios';
 
 export const AuthContext = React.createContext();
 
@@ -23,16 +24,26 @@ const AuthProvider = ({ children }) => {
     return user?.capabilities?.includes(capability); // Cool way to write this, need to research the syntax
   }
 
-  const login = async (username, password) => {
-    let creds = testUser[username];
-
-    if (creds && creds.password === password) {
-      try {
-        _validateToken(creds.token);
-      } catch (error) {
-        console.log(error.message);
+  const login = async (username, password) => { 
+    let user = await axios.post('https://api-js401.herokuapp.com/signin', {}, {
+      auth: {
+        username,
+        password,
       }
+    })
+    console.log(user)
+    let creds = user.data;
+
+    if (creds) {
+      _validateToken(creds.token)
     }
+    // if (creds && creds.password === password) {
+    //   try {
+    //     _validateToken(creds.token);
+    //   } catch (error) {
+    //     console.log(error.message);
+    //   }
+    // }
   }
 
   const logout = () => {
